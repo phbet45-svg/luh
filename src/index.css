@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Cinzel", serif;
+
+  --color-gold-lux: #D4AF37;
+  --color-gold-light: #F3E5AB;
+  --color-gold-dark: #AA820A;
+  --color-black-premium: #060606;
+  --color-dark-card: #0F0F0F;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #060606;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 4px;
+  border: 2px solid #060606;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Golden glow helpers */
+.shadow-gold-glow {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.12);
+}
+.shadow-gold-glow-hover:hover {
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.25);
+}
+
+/* Tactical grid and badge effects */
+.tactical-grid {
+  background-size: 24px 24px;
+  background-image: linear-gradient(to right, rgba(212, 175, 55, 0.02) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(212, 175, 55, 0.02) 1px, transparent 1px);
+}
+
+.premium-gradient-text {
+  background: linear-gradient(135deg, #FFFFFF 30%, #F3E5AB 70%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(to right, #AA820A, #D4AF37, #F3E5AB, #AA820A) 1;
+}
+
+/* Smooth smooth scroll */
+html {
+  scroll-behavior: smooth;
+  background-color: #060606;
+  color: #ffffff;
+}
+

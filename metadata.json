@@ -1,0 +1,6 @@
+{
+  "name": "LUH Despachante de Armas",
+  "description": "Website profissional e premium da Assessoria Luh Despachante de Armas, especializada em regularização, CAC e processos junto ao Exército.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
