@@ -12,7 +12,7 @@ export default function FloatingButtons() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3.5 items-center pointer-events-auto">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col gap-2.5 sm:gap-3.5 items-center pointer-events-auto">
       {/* Instagram Button */}
       <motion.button
         id="floating-instagram-action"
@@ -20,9 +20,9 @@ export default function FloatingButtons() {
         whileHover={{ scale: 1.1, translateY: -2 }}
         whileTap={{ scale: 0.9 }}
         aria-label="Abrir Instagram"
-        className="w-12 h-12 rounded-full bg-gradient-to-tr from-[#f09433] via-[#e1306c] to-[#bc1888] text-white flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
+        className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-tr from-[#f09433] via-[#e1306c] to-[#bc1888] text-white flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow cursor-pointer"
       >
-        <Instagram className="w-5 h-5 text-white" />
+        <Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
       </motion.button>
 
       {/* WhatsApp Button */}
@@ -32,9 +32,9 @@ export default function FloatingButtons() {
         whileHover={{ scale: 1.1, translateY: -2 }}
         whileTap={{ scale: 0.9 }}
         aria-label="Abrir WhatsApp"
-        className="w-14 h-14 rounded-full bg-[#25D366] text-black flex items-center justify-center shadow-lg shadow-[#25D366]/20 hover:shadow-2xl transition shadow-golden cursor-pointer"
+        className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] text-black flex items-center justify-center shadow-lg shadow-[#25D366]/20 hover:shadow-2xl transition shadow-golden cursor-pointer"
       >
-        <MessageCircle className="w-7 h-7 text-black fill-black/10" />
+        <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7 text-black fill-black/10" />
       </motion.button>
     </div>
   );

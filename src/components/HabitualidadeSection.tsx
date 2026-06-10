@@ -17,7 +17,7 @@ export default function HabitualidadeSection({ onContactClick }: HabitualidadeSe
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
-          className="relative p-10 sm:p-16 rounded-xl bg-gradient-to-br from-[#0C0C0C] to-[#111111] border-2 border-gold-lux/50 shadow-gold-glow text-center space-y-10 overflow-hidden group"
+          className="relative p-6 xs:p-10 sm:p-16 rounded-xl bg-gradient-to-br from-[#0C0C0C] to-[#111111] border-2 border-gold-lux/50 shadow-gold-glow text-center space-y-10 overflow-hidden group"
         >
           {/* Subtle glowing borders */}
           <div className="absolute top-0 left-0 w-20 h-[3px] bg-gradient-to-r from-gold-lux to-gold-light" />
@@ -26,15 +26,15 @@ export default function HabitualidadeSection({ onContactClick }: HabitualidadeSe
           <div className="absolute bottom-0 right-0 w-[3px] h-20 bg-gradient-to-t from-gold-lux to-gold-light" />
 
           {/* Decorative tag */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-gold-lux/10 border border-gold-lux/35 rounded-full">
-            <Sparkles className="w-3.5 h-3.5 text-gold-lux animate-pulse" />
-            <span className="text-[10px] sm:text-xs font-mono font-bold tracking-widest text-gold-light uppercase">
+          <div className="inline-flex items-center gap-2 px-3 xs:px-4 py-1.5 bg-gold-lux/10 border border-gold-lux/35 rounded-full max-w-full">
+            <Sparkles className="w-3.5 h-3.5 text-gold-lux animate-pulse shrink-0" />
+            <span className="text-[8px] xs:text-[9.5px] sm:text-xs font-mono font-bold tracking-[0.1em] xs:tracking-widest text-gold-light uppercase break-words text-center">
               CONTROLE DE FREQUÊNCIA & HABITUALIDADE DE NÍVEL NACIONAL
             </span>
           </div>
 
           <div className="space-y-4 max-w-3xl mx-auto">
-            <h2 className="font-display text-3xl sm:text-5xl font-black uppercase tracking-tight text-white leading-tight">
+            <h2 className="font-display text-2xl xs:text-3xl sm:text-5xl font-black uppercase tracking-tight text-white leading-tight">
               CONTROLE DE HABITUALIDADE IMPECÁVEL
             </h2>
             <div className="h-[3px] w-24 bg-gradient-to-r from-gold-lux via-gold-light to-gold-lux mx-auto rounded" />

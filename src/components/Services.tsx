@@ -8,7 +8,9 @@ import {
   Target,
   History,
   Briefcase,
-  Sparkles
+  Sparkles,
+  ShieldCheck,
+  Award
 } from "lucide-react";
 
 interface ServicesProps {
@@ -26,7 +28,7 @@ export default function Services({ onServiceSelect }: ServicesProps) {
     {
       id: "transferencia",
       title: "Transferência de Armas",
-      description: "Assessoria documental completa para processos de transferência de propriedade de armas entre PF e Exército.",
+      description: "A transferência de propriedade de uma arma de fogo exige autorização prévia da Polícia Federal (para armas de defesa) ou do Exército (para acervos CAC). O comprador deve comprovar os mesmos requisitos de uma aquisição primária, incluindo capacidade técnica, aptidão psicológica e idoneidade.",
       icon: ArrowLeftRight,
     },
     {
@@ -75,7 +77,7 @@ export default function Services({ onServiceSelect }: ServicesProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         
         {/* Header Title Grid */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-20 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 gap-6">
           <div className="space-y-4">
             <span className="font-mono text-[10px] text-gold-lux tracking-[0.25em] font-bold uppercase block">
               CATÁLOGO DE SOLUÇÕES DOCUMENTAIS PREMIUM
@@ -89,6 +91,59 @@ export default function Services({ onServiceSelect }: ServicesProps) {
             Deixe o trabalho burocrático e operacional com especialistas credenciados de alto padrão. Atendimento focado em celeridade máxima e 100% de conformidade jurídica.
           </p>
         </div>
+
+        {/* Elite Services Quick Summary Block - Refactored into a high premium Bento-style Grid */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-16 p-6 sm:p-10 rounded-xl bg-gradient-to-b from-[#0E0E0E] to-[#0A0A0A] border border-white/[0.06] shadow-2xl relative overflow-hidden"
+        >
+          {/* Top highlight line */}
+          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold-lux/50 to-transparent" />
+          
+          {/* Subtle gold background sweep */}
+          <div className="absolute -top-20 -right-20 w-80 h-80 bg-gold-lux/5 rounded-full blur-[100px] pointer-events-none" />
+          
+          <div className="flex items-center gap-3 mb-8 border-b border-white/[0.06] pb-4">
+            <Award className="w-5 h-5 text-gold-lux" />
+            <h3 className="font-display text-xs sm:text-sm font-bold uppercase text-white tracking-[0.2em] leading-snug">
+              ESPECIALIDADES DE ALTO PADRÃO • PORTFÓLIO COMPLETO
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { text: "Aquisição, Transferência e Registro de Armas de Fogo", isHighlight: false },
+              { text: "Posse e Porte de Arma de Fogo", isHighlight: false },
+              { text: "Renovação de Porte de Arma", isHighlight: false },
+              { text: "CR de Caçador, Atirador e Colecionador (CAC)", isHighlight: false },
+              { text: "Guia de Tráfego Eletrônica Especializada", isHighlight: false },
+              { text: "Transferência por Inventário, Sucessão e Acordo", isHighlight: false },
+              { text: "Aquisição e Transferência de Veículos Blindados", isHighlight: false },
+              { text: "Assessoria Especializada para Lojistas, Despachantes, Clubes e Estandes de Tiro, além de Lojas de Armas", isHighlight: true }
+            ].map((item, idx) => (
+              <div 
+                key={idx} 
+                className={`p-4 rounded-lg bg-[#070707] border border-white/[0.03] flex items-start gap-3 hover:border-gold-lux/40 hover:bg-[#0E0E0E] transition-all duration-300 group/item ${
+                  item.isHighlight 
+                    ? "md:col-span-2 lg:col-span-3 border-gold-lux/25 bg-gradient-to-r from-[#0C0C0C] to-[#0E0E0E] hover:border-gold-lux/50" 
+                    : ""
+                }`}
+              >
+                <div className="flex-shrink-0 mt-0.5">
+                  <ShieldCheck className="w-4 h-4 text-gold-lux group-hover/item:scale-110 transition-transform" />
+                </div>
+                <div>
+                  <p className="text-[13px] font-sans font-medium text-gray-200 leading-normal group-hover/item:text-white transition-colors">
+                    {item.text}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
 
         {/* Services premium layout cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

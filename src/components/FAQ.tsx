@@ -17,7 +17,7 @@ export default function FAQ() {
     },
     {
       question: "Como obter o CR junto ao Exército?",
-      answer: "A obtenção do CR (Certificado de Registro) exige a preparação de um dossiê completo de idoneidade (certidões criminais negativas), filiação regular a um clube de tiro, aprovação em laudo psicológico com profissional credenciado e aprovação em teste de capacidade técnica de tiro conduzido por instrutor credenciado. Nossa assessoria cuida de toda essa papelada e acompanha a validação no SisGCorp.",
+      answer: "A obtenção do CR (Certificado de Registro) exige a preparação de um dossiê completo de idoneidade (certidões criminais negativas), filiação regular a um clube de tiro, aprovação em laudo psicológico com profissional credenciado e aprovação em teste de capacidade técnica de tiro conduzido por instrutor credenciado. Nossa assessoria cuida de toda essa papelada e acompanha a validação no SinarmCac.",
     },
     {
       question: "Posso transferir minha arma de fogo para outra pessoa?",
@@ -29,7 +29,7 @@ export default function FAQ() {
     },
     {
       question: "Quanto tempo demora o processo?",
-      answer: "O prazo médio de resposta varia de acordo com o órgão regulador e a região militar (R.M.) do país. Geralmente, processos digitais pelo SisGCorp/SIGMA levam entre 30 a 90 dias após o protocolo protocolar integral. Fornecemos códigos de rastreamento e monitoramento ativo semanal para agilizar respostas e sanar exigências adicionais dos analistas.",
+      answer: "O prazo médio de resposta varia de acordo com o órgão regulador e a região militar (R.M.) do país. Geralmente, processos digitais pelo SinarmCac/SIGMA levam entre 30 a 90 dias após o protocolo protocolar integral. Fornecemos códigos de rastreamento e monitoramento ativo semanal para agilizar respostas e sanar exigências adicionais dos analistas.",
     },
     {
       question: "Preciso declarar habitualidade com que frequência?",

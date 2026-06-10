@@ -77,22 +77,22 @@ export default function Hero({ onContactClick }: HeroProps) {
             className="lg:col-span-7 order-1 lg:order-2 space-y-8 flex flex-col justify-center"
           >
             {/* Top gold tag line */}
-            <div className="flex flex-wrap items-center gap-3 border-b-2 border-gold-lux/25 pb-3 self-start">
+            <div className="flex flex-wrap items-center gap-2 xs:gap-3 border-b-2 border-gold-lux/25 pb-3 self-start">
               <div className="flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-gold-lux animate-pulse" />
-                <span className="text-[11px] sm:text-xs font-mono text-gold-light tracking-[0.25em] uppercase font-bold">
+                <span className="text-[9.5px] xs:text-[11px] sm:text-xs font-mono text-gold-light tracking-[0.12em] xs:tracking-[0.25em] uppercase font-bold">
                   ESCRITÓRIO DOCUMENTAL & JURÍDICO PREMIUM
                 </span>
               </div>
               <span className="hidden sm:inline text-white/20">|</span>
-              <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-gold-lux/10 border border-gold-lux/30 text-[10px] font-mono font-bold text-gold-light uppercase tracking-wider">
+              <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-gold-lux/10 border border-gold-lux/30 text-[9px] xs:text-[10px] font-mono font-bold text-gold-light uppercase tracking-wider">
                 CNPJ {`45.804.890/0001-22`}
               </div>
             </div>
 
             {/* Display headliner */}
             <div className="space-y-4">
-              <h1 className="font-display text-4xl sm:text-5xl lg:text-7.5xl font-extrabold tracking-tight text-white leading-[1.1] uppercase">
+              <h1 className="font-display text-3xl xs:text-4xl sm:text-5xl lg:text-7.5xl font-extrabold tracking-tight text-white leading-[1.15] uppercase">
                 Assessoria <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-lux via-gold-light to-gold-dark font-extrabold filter drop-shadow">
                   Elite & Exclusiva

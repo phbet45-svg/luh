@@ -5,6 +5,7 @@ export default function Authority() {
   const specialties = [
     "Regularização de Armamentos",
     "Processos Exército Brasileiro (SisGCorp)",
+    "Processos Polícia Federal (SINARM / SinarmCac)",
     "Documentação CAC (Atirador, Caçador, Colecionador)",
     "Controle Estrito de Habitualidade",
     "Recursos e Requerimentos Especiais",
@@ -49,7 +50,7 @@ export default function Authority() {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-gold-lux/10 border border-gold-lux/30 rounded-full">
                 <ShieldCheck className="w-3.5 h-3.5 text-gold-lux" />
-                <span className="font-mono text-[9px] text-gold-light tracking-[0.25em] font-extrabold uppercase">
+                <span className="font-mono text-[8px] xs:text-[9px] text-gold-light tracking-[0.12em] xs:tracking-[0.25em] font-extrabold uppercase">
                   CREDIBILIDADE, RIGOR & PRESTÍGIO
                 </span>
               </div>
@@ -89,7 +90,7 @@ export default function Authority() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.5, delay: idx * 0.15 }}
-                  className="relative p-6 rounded-lg bg-[#0E0E0E] border-2 border-white/5 shadow-2xl group hover:border-gold-lux/40 transition-all duration-300 overflow-hidden flex flex-col justify-between aspect-[4/5] min-h-[220px]"
+                  className="relative p-6 rounded-lg bg-[#0E0E0E] border-2 border-white/5 shadow-2xl group hover:border-gold-lux/40 transition-all duration-300 overflow-hidden flex flex-col justify-between aspect-auto sm:aspect-[4/5] min-h-0 sm:min-h-[220px]"
                 >
                   {/* Subtle inner golden brush/glow effect */}
                   <div className="absolute top-0 right-0 w-24 h-24 bg-gold-lux/5 rounded-full blur-2xl pointer-events-none group-hover:bg-gold-lux/10 transition-colors" />

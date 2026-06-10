@@ -6,9 +6,9 @@ export default function IntroPreloader() {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    // 6-second total duration (6000ms)
+    // 4-second total duration (4000ms)
     const startTime = Date.now();
-    const duration = 6000;
+    const duration = 4000;
 
     const interval = setInterval(() => {
       const elapsed = Date.now() - startTime;
@@ -104,7 +104,7 @@ export default function IntroPreloader() {
           <div className="relative z-10 max-w-2xl px-6 flex flex-col items-center justify-center space-y-10">
             
             {/* Extremely Large, Robust & Highly Professional Logo Container (Shield Frame design) */}
-            <div className="relative p-10 md:p-14 rounded-full bg-gradient-to-b from-[#0E0E0E] via-[#080808] to-[#040404] border-2 border-gold-lux/35 backdrop-blur-3xl shadow-[0_0_100px_rgba(212,175,55,0.25)] flex flex-col items-center justify-center w-[280px] h-[280px] md:w-[380px] md:h-[380px] overflow-hidden group">
+            <div className="relative p-6 xs:p-10 md:p-14 rounded-full bg-gradient-to-b from-[#0E0E0E] via-[#080808] to-[#040404] border-2 border-gold-lux/35 backdrop-blur-3xl shadow-[0_0_100px_rgba(212,175,55,0.25)] flex flex-col items-center justify-center w-[230px] h-[230px] xs:w-[280px] xs:h-[280px] md:w-[380px] md:h-[380px] overflow-hidden group">
               
               {/* Highlight Sweep reflection effect */}
               <motion.div
@@ -149,7 +149,7 @@ export default function IntroPreloader() {
                 src="https://i.postimg.cc/t4vCT6JN/logo-lub.png"
                 alt="Luh Logo"
                 referrerPolicy="no-referrer"
-                className="w-48 h-48 md:w-68 md:h-68 object-contain relative z-10 filter drop-shadow-[0_0_35px_rgba(212,175,55,0.55)] saturate-[1.3] brightness-[1.12]"
+                className="w-36 h-36 xs:w-48 xs:h-48 md:w-68 md:h-68 object-contain relative z-10 filter drop-shadow-[0_0_35px_rgba(212,175,55,0.55)] saturate-[1.3] brightness-[1.12]"
               />
             </div>
 
@@ -158,23 +158,23 @@ export default function IntroPreloader() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 1 }}
-              className="text-center space-y-2"
+              className="text-center space-y-2 px-4"
             >
-              <h2 className="font-display text-2xl md:text-4xl font-black uppercase text-white tracking-[0.25em] leading-none">
+              <h2 className="font-display text-xl xs:text-2xl md:text-4xl font-black uppercase text-white tracking-[0.15em] xs:tracking-[0.25em] leading-none">
                 LUH DESPACHANTE
               </h2>
-              <div className="flex items-center justify-center gap-3">
-                <span className="h-[1.5px] w-6 bg-gold-lux/50" />
-                <p className="font-mono text-[9px] md:text-[10px] text-gold-light tracking-[0.35em] font-bold uppercase">
+              <div className="flex items-center justify-center gap-2 xs:gap-3">
+                <span className="h-[1.5px] w-4 xs:w-6 bg-gold-lux/50" />
+                <p className="font-mono text-[8px] xs:text-[9px] md:text-[10px] text-gold-light tracking-[0.18em] xs:tracking-[0.35em] font-bold uppercase">
                   ASSESSORIA DOCUMENTAL DE ELITE
                 </p>
-                <span className="h-[1.5px] w-6 bg-gold-lux/50" />
+                <span className="h-[1.5px] w-4 xs:w-6 bg-gold-lux/50" />
               </div>
             </motion.div>
 
             {/* Robust loading progress bar */}
             <div className="w-full flex flex-col items-center space-y-3">
-              <div className="relative w-64 md:w-80 h-2.5 bg-neutral-950 border border-gold-lux/25 rounded-full overflow-hidden shadow-inner">
+              <div className="relative w-52 xs:w-64 md:w-80 h-2.5 bg-neutral-950 border border-gold-lux/25 rounded-full overflow-hidden shadow-inner">
                 {/* Active golden highlight fill */}
                 <motion.div
                   initial={{ width: "0%" }}

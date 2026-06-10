@@ -51,7 +51,7 @@ export default function GoogleReviews() {
     {
       label: "Atuação Nacional",
       value: "Todo Brasil",
-      desc: "Trâmite eletrônico ágil via SisGCorp",
+      desc: "Trâmite eletrônico ágil via SinarmCac",
       icon: Globe,
     },
   ];
@@ -65,7 +65,7 @@ export default function GoogleReviews() {
       messages: [
         {
           sender: "client",
-          text: "Olá Luh! Queria agradecer pela agilidade no meu processo. Meu CR saiu emitido hoje de manhã no SisGCorp!",
+          text: "Olá Luh! Queria agradecer pela agilidade no meu processo. Meu CR saiu emitido hoje de manhã no SinarmCac!",
           time: "09:14",
         },
         {
@@ -136,7 +136,7 @@ export default function GoogleReviews() {
         
         {/* Intro description */}
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
-          <span className="font-mono text-[10px] text-gold-lux tracking-[0.25em] font-bold uppercase block">
+          <span className="font-mono text-[8px] xs:text-[10px] text-gold-lux tracking-[0.12em] xs:tracking-[0.25em] font-bold uppercase block">
             PROVA SOCIAL & AUTORIDADE REGISTADA
           </span>
           <h2 className="font-display text-3xl sm:text-5xl font-black uppercase tracking-tight text-white leading-tight">

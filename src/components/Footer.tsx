@@ -55,7 +55,7 @@ export default function Footer() {
                 { label: "Início", href: "#inicio" },
                 { label: "Serviços", href: "#servicos" },
                 { label: "Explicativo da Lei", href: "#explicativa" },
-                { label: "Níveis de Atirador", href: "#niveis" },
+                { label: "Idade por Atirador", href: "#niveis" },
                 { label: "Dúvidas Frequentes", href: "#duvidas" },
                 { label: "Avaliações", href: "#avaliacoes" },
               ].map((link) => (

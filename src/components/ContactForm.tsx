@@ -188,7 +188,7 @@ const ContactForm = forwardRef<ContactFormRef, ContactFormProps>(({ preselectedS
                 <div>
                   <h4 className="text-xs uppercase font-mono tracking-widest text-gold-light font-bold">Atendimento Presencial e Digital</h4>
                   <p className="text-xs sm:text-sm font-sans text-gray-400 mt-1 font-light leading-relaxed">
-                    Assessoria remota para todo o território nacional através do SisGCorp ou agendada para atendimento físico.
+                    Assessoria remota para todo o território nacional através do SinarmCac ou agendada para atendimento físico.
                   </p>
                 </div>
               </div>

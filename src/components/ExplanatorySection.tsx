@@ -33,7 +33,7 @@ export default function ExplanatorySection() {
       shortDesc: "Sigla para Colecionador, Atirador Desportivo e Caçador.",
       fullDesc: "É a categoria de pessoa física autorizada pelo Exército a exercer as atividades de colecionar material bélico, praticar o esporte de tiro ou realizar o controle de fauna silvestre exótica (caça autorizada), cada uma vinculada ao seu CR correspondente.",
       icon: Users,
-      lawCode: "SisGCorp",
+      lawCode: "SinarmCac",
     },
   ];
 
